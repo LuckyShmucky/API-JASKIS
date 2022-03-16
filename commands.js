@@ -3,7 +3,52 @@
 
 // GETTING STARTED
 // 1. Create a database called jaskis
-use jaskis
+
+// use jaskis
+
+//db.createCollection('bounties')
+
+//show collections
+
+//db.bounties.instertOne(
+//   {
+//     name: "Thanoceros",
+//     species: "Rhinoceros",
+//     location: "Grasslands",
+//     wantedFor: "Eating too much grass",
+//     client: "Songbird",
+//     reward: 10000,
+//     captured: false
+//   }
+// )
+
+// db.bounties.find()
+
+//db.bounties.insertMany()
+
+// db.bounties.find()
+
+// db.bounties.find({location: 'Grasslands'})
+
+//db.bounties.find({reward: {$gte: 10000}})
+
+// db.bounties.find({}, {client: 0})
+
+// db.bounties.find({$and:[
+//   {species: "Groundhog"},
+//   {location: "Woodlands"}
+//   ]})
+
+// db.bounties.updateOne({name: "Polarwind"}, {$set:{reward:10000}})
+
+//db.bounties.find({name: "Polarwind"})
+
+//db.bounties.deleteOne({name: "Lokinkajou"})
+
+//db.bounties.find({name: "Lokinkajou"})
+
+//db.bounties.updateMany({captured: false}, {$set: {captured: true}})
+
 
 // 2. Create a collection called bounties
 db.createCollection("bounties")
